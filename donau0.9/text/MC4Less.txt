@@ -1,0 +1,28 @@
+STOP - DCCARGE - AC GEN - START SYNC - RUN  
+
+
+if( PRM_PCS[GRID_GATE_WAY_ENB].iValue == 1 )
+
+FLTH_GRID_CB_TRIP
+MCCB.Status.BitVal.bCB3
+MC_GetStatus(STAUS_CB3)
+
+FLTH_MC4
+MCCB.Status.BitVal.bMC4
+MC_GetStatus(STAUS_MC4)
+
+
+FLTH_GRID_CB2
+
+
+- MC4는 항시 붙은 것 같이 Status내보냄.
+- CB2가 ON되면 MC4와 
+- CB2를 CB3처럼 사용.
+- 기존 CB2포트 사용.
+- ESLV 모드로 동작할 수 없음. CTRL.BYP.SYNC.g_enb
+
+MCB_UpdateCmd(M_CB2_GRID, CB_CMD_ON);
+MCB_UpdateCmd(M_CB2_GRID, CB_CMD_OFF);
+MCB_UpdateCmd(M_CB2_GRID, CB_CMD_TRIP);
+MCB_UpdateCmd(M_CB2_GRID, CB_CMD_RESET);
+

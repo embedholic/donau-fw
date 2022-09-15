@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?ccsproject version="1.0"?>
+<projectOptions>
+	<deviceVariant value="TMS320C28XX.TMS320C28346"/>
+	<deviceFamily value="C2000"/>
+	<deviceEndianness value="little"/>
+	<codegenToolVersion value="6.1.1"/>
+	<isElfFormat value="false"/>
+	<connection value="common/targetdb/connections/SD560V2USB_Connection.xml"/>
+	<linkerCommandFile value="TMS320C28346.cmd"/>
+	<rts value="libc.a"/>
+	<templateProperties value="id=com.ti.rtsc.SYSBIOS.example_16,type=rtsc,products=com.ti.rtsc.SYSBIOS,platform=ti.platforms.tms320x28:$DeviceId$,buildProfile=release,isHybrid=true,configuroOptions=--compileOptions &quot;-g --optimize_with_debug&quot;,"/>
+	<isTargetManual value="false"/>
+</projectOptions>

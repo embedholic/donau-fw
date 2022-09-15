@@ -1,0 +1,18 @@
+CTRL.INV.ctrl_mode_change_enb
+->
+CC.c: 
+- SwFilter change ( ACP.BYP.blackout_enb && CTRL.INV.SEAMLESS.pcc_blackout_enb)
+- CC Period change
+- etc
+
+CTRL.BYP.SYNC.g_enb
+->
+- PARAM_VAL(BYP_MODE) == 1
+- 
+
+ACP.BYP.blackout_enb
+- CTRL_BYP_SYNC.c: AutoGI && RUN && CTRL.INV.SEAMLESS.pcc_blackout_enb 일경우
+-
+
+CTRL.INV.SEAMLESS.pcc_blackout_enb
+- CTRL_INV_SEAMLESS.c: pcc측 ov, uv일 경우(단, AutoGI모드에 STATE가 RUN일 경우)

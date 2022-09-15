@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="x-windows-949"?>
+<!--  This file conforms to the DTD xdc/bld/build.dtd -->
+<package name="xconfig_app" version="" producerId="undefined">
+    <units>
+    </units>
+    <sources>
+        <srcFile name="package/cfg/app_p28FP.c"/>
+    </sources>
+    <configscripts>
+        <srcFile name="C:/Users/isjeon/workspace/MY_WORK/destine/fw/stableen_mcu_jcnet/app.cfg"/>
+    </configscripts>
+    <makefiles>
+        <srcFile name="package.mak" src="package.bld"/>
+        <srcFile name="package/package.xdc.dep" src="package.xdc"/>
+        <srcFile name="package/cfg/app_p28FP.mak" src="package.bld"/>
+        <srcFile name="package/cfg/app_p28FP.o28FP.dep" src="package/cfg/app_p28FP.c"/>
+        <srcFile name="package/cfg/app_p28FP.dep" src="package/cfg/app_p28FP.cfg"/>
+        <srcFile name="package/cfg/app.x28FP.mak" src="package.bld"/>
+        <srcFile name="package/rel/xconfig_app.tar.dep" src="package/rel/xconfig_app.xdc.inc"/>
+    </makefiles>
+    <targets>
+        <target name="ti.targets.C28_float"
+            version="ti.targets.C28_float{1,0,20.2,5"
+            rawVersion="20.2.5"
+            platform="ti.platforms.sim28xx"
+            isa="28FP"
+            suffix="28FP"
+            rootDir="C:/ti/ccs1040/ccs/tools/compiler/ti-cgt-c2000_20.2.5.LTS"
+            os="undefined"
+            rts="ti.targets.rts2800">
+            <model endian="little"
+                codeModel="undefined"
+                dataModel="large"/>
+        </target>
+    </targets>
+    <libraries>
+    </libraries>
+    <configurations>
+    <configuration name="app"
+        pname="app.p28FP"
+        target="ti.targets.C28_float"
+        platform="ti.platforms.tms320x28:TMS320C28346"
+        profile="release"
+        isPartial="false"
+        xCfgScript="package/cfg/app_p28FP.cfg"
+        xCfgPrefix="package/cfg/app_p28FP"
+        cfgScript="C:/Users/isjeon/workspace/MY_WORK/destine/fw/stableen_mcu_jcnet/app.cfg"
+        cfgArgs="null"
+        />
+    </configurations>
+    <executables>
+    <executable name="app"
+        pname="app.x28FP"
+        target="ti.targets.C28_float"
+        platform="ti.platforms.tms320x28:TMS320C28346"
+        profile="release"
+        xCfgScript="package/cfg/app_p28FP.cfg"
+        xCfgPrefix="package/cfg/app_p28FP"
+        cfgScript="C:/Users/isjeon/workspace/MY_WORK/destine/fw/stableen_mcu_jcnet/app.cfg"
+        cfgArgs="null"
+        />
+    </executables>
+    <tests>
+    <test exeName="app.x28FP"
+        args=""
+        groupName="app.x28FP"
+        refOutput="undefined"
+        refExitCode="0"
+        execArgs=""
+        />
+    </tests>
+    <releases relDir="package/rel/">
+    <release name="xconfig_app"
+        pname="xconfig_app.tar"
+        label="default"
+    >
+        <file name="package/package.bld.xml"/>
+        <file name="package/build.cfg"/>
+        <file name="package/package.xdc.inc"/>
+    </release>
+    </releases>
+    <repositories>
+    </repositories>
+</package>

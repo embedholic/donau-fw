@@ -1,0 +1,6 @@
+<donau 0.6>
+각 위치의 최대전류 등 파라메터 적용 (destin에서 받음)
+DONAU용 DIN, DOUT 핀 용도에 맞게 MCCB MCB 및 modbus 측 소스 수정
+
+<donau 0.7>
+Inverter(sag compensator) 측 소스 진행

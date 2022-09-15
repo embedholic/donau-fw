@@ -1,0 +1,11 @@
+syntax: glob
+[A-za-z -]*\.obj
+[A-za-z -]*\.bak
+.pp
+[A-za-z -]*\.pp
+syntax: regexp
+[A-za-z -]*\.pp
+[A-za-z -]*\.obj
+[A-za-z -]*\.bak
+.pp
+[A-za-z -]*\.pp
