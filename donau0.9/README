@@ -4,3 +4,10 @@ DONAU용 DIN, DOUT 핀 용도에 맞게 MCCB MCB 및 modbus 측 소스 수정
 
 <donau 0.7>
 Inverter(sag compensator) 측 소스 진행
+
+<donau 0.9> 
+나주에서 dio 간단 확인..
+
+git token
+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
+https://github.com/embedholic/donau-fw
